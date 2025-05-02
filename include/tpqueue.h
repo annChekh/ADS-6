@@ -8,7 +8,7 @@ class TPQueue {
     struct Knot {
         T data;
         Knot* next;
-        Knot(const T& d) : data(d), next(nullptr) {}
+        explicit Knot(const T& d) : data(d), next(nullptr) {}
     };
     Knot* head;
 
