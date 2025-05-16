@@ -21,7 +21,6 @@ class TPQueue {
             delete tmp;
         }
     }
-
     void push(const T& item) {
         Knot* newKnot = new Knot(item);
         if (!head || head->data.prior < item.prior) {
